@@ -1,6 +1,6 @@
 # History
 
-## v0.5.2 - 2022-08-18
+## v0.5.3 - 2022-08-18
 
 This release updates CTGAN to use the latest version of RDT. It also includes performance and robustness updates to the data transformer.
 
