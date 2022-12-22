@@ -159,7 +159,7 @@ class DataTransformer(object):
                 process = delayed(self._transform_discrete)(column_transform_info, data)
             processes.append(process)
 
-        return Parallel(n_jobs=-1)(processes)
+        return Parallel(n_jobs=-1, temp_folder="/tmp", mmap_mode="r+")(processes)
 
     def transform(self, raw_data):
         """Take raw data and output a matrix data."""
